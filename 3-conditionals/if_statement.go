@@ -1,0 +1,20 @@
+package main
+
+import "fmt"
+
+func main() {
+	messageLen := 10
+	maxMessageLen := 20
+	fmt.Println("Trying to send a message of length:", messageLen, "and a max length of:", maxMessageLen)
+
+	if messageLen <= maxMessageLen {
+		fmt.Println("Message sent")
+	} else {
+		fmt.Println("Message not sent")
+	}
+
+	// variable availabe in if statement scope only
+	if length := 10; length < 20 {
+		fmt.Println("Valid format.")
+	}
+}
