@@ -87,3 +87,7 @@ Update the query to create a user and regenerate database package with sqlc `sql
 Add a new query to get a user by API key.
 > Each time you update your queries or schema you'll need to regenerate your Go code with sqlc generate. If you update the schema you'll also need to migrate your database up (and maybe down).
 Create a new package in internal folder */internal/auth* and create a function GetAPIKey wich will extracts the key from the HTTP request header.
+
+## Create feed
+Add a new migration and create a new table for feeds and appropriate columns. *run goose command from /sql/schema folder*
+Add a new query to create a feed, then use sqlc generate to generate the Go code.
