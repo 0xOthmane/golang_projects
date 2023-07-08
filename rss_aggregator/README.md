@@ -17,3 +17,10 @@ go mod vendor
 go mod tidy
 go mod vendor
 ```
+
+
+Create a Router and a Server (port:8080 defined in .env file).
+
+Define helper functions that write an HTTP response with: status code, JSON body, content type: `application/json`.
+
+Test the helper function with sending a request (GET/POST/..) to http://localhost:8080/v1/healthz. Or Specify what type of request you allow by changing `v1Router.HandleFunc()` to `v1.Get()`
