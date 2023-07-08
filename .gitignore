@@ -12,7 +12,12 @@
 *.out
 
 # Dependency directories (remove the comment below to include it)
-# vendor/
+Rss_aggregator_project/vendor/
 
 # Go workspace file
 go.work
+
+# Project
+rss_aggregator/.env
+rss_aggregator/vendor
+rss_aggregator/rss_aggregator
