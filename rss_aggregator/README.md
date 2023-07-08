@@ -91,3 +91,5 @@ Create a new package in internal folder */internal/auth* and create a function G
 ## Create feed
 Add a new migration and create a new table for feeds and appropriate columns. *run goose command from /sql/schema folder*
 Add a new query to create a feed, then use sqlc generate to generate the Go code.
+Create function to map a dbFeed to a Feed, and a slice of dbFeeds to a slice of Feed.
+Add a new query to get all the feeds in db (no auth).
