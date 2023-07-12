@@ -93,3 +93,6 @@ Add a new migration and create a new table for feeds and appropriate columns. *r
 Add a new query to create a feed, then use sqlc generate to generate the Go code.
 Create function to map a dbFeed to a Feed, and a slice of dbFeeds to a slice of Feed.
 Add a new query to get all the feeds in db (no auth).
+
+## Feed follows (many to many relationships)
+Add a new migration and create a new table for feed follows (constraint unique(user_id, feed_id)).
